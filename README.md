@@ -9,62 +9,51 @@
 - Integração com TMDB.
 - Suporte para contribuições via Patreon e GitHub.
 
+## Como Rodar o Bot
+
+Para executar o Controle Remoto Bot, siga estas etapas:
+
+1. **Requisitos:**
+   - **Python 3.x**: Assegure-se de ter Python 3 ou superior instalado.
+
+2. **Execução:**
+   - **Via Script Python:** Abra o terminal e execute:
+     ```bash
+     python bot.py
+     ```
+   - **Via Executável:** Baixe e execute o arquivo executável disponível.
+
+3. **Configuração de APIs:**
+   - Será necessário criar tokens de API, como o token do Discord e a chave da API do TMDB, e configurá-los no arquivo `.env`.
+
 ## Configurações Iniciais
 
-Antes de executar o bot, você precisará configurar algumas credenciais para garantir que o bot possa acessar suas APIs necessárias. Siga as etapas abaixo para gerar e configurar suas credenciais.
-
-### 1. Gerar o Token do Bot do Discord
+### Gerar o Token do Bot do Discord
 
 1. **Crie uma Conta de Desenvolvedor Discord:**
    - Visite o [Portal do Discord para Desenvolvedores](https://discord.com/developers/applications).
    - Faça login ou crie uma nova conta.
 
-2. **Crie uma Nova Aplicação:**
-   - Clique em "New Application".
-   - Dê um nome para sua aplicação e clique em "Create".
+2. **Obtenha o Token do Bot:**
+   - Crie uma nova aplicação e adicione um bot, então gere o token.
 
-3. **Configure o Bot:**
-   - Vá para a seção "Bot" e clique em "Add Bot".
-
-4. **Obtenha o Token do Bot:**
-   - Clique em "Reset Token" para gerar um novo token.
-   - Copie e mantenha seguro este token.
-
-5. **Conceda Permissões ao Bot:**
-   - Na aba "OAuth2", em "URL Generator", selecione os escopos necessários para gerar o link de convite do bot.
-
-### 2. Obtenha a Chave da API do TMDB
+### Obtenha a Chave da API do TMDB
 
 1. **Crie uma Conta no TMDB:**
    - Visite o [TMDB](https://www.themoviedb.org/) e faça login.
 
-2. **Acesse as Configurações de API:**
-   - Clique no ícone de usuário -> "Settings" -> "API".
+2. **Obtenha a Chave de API:**
+   - Navegue para as configurações de API e gere sua chave.
 
-3. **Requisite a Chave de API:**
-   - Siga o processo para obter uma chave de API.
+### Configurar a Senha do VLC Media Player
 
-### 3. Configurar a Senha do VLC Media Player
+1. **Abra o VLC Media Player e Acesse as Preferências:**
+   - Configure a interface web e defina a senha.
 
-1. **Abra o VLC Media Player:**
-   - Inicie o VLC.
+## Contribuição
 
-2. **Acesse as Configurações de Interface Web:**
-   - Vá em "Tools" -> "Preferences".
-   - Escolha “All” para mostrar todas as configurações.
+Contribuições são bem-vindas! Você pode apoiar o projeto ou sugerir melhorias diretamente no [GitHub](https://github.com/seurepositorio) ou através do nosso [Patreon](https://www.patreon.com/seuusuario).
 
-3. **Habilitar Controle Remoto:**
-   - Em "Interface" -> "Main interfaces" ative "Web".
+## Licença
 
-4. **Configurar a Senha:**
-   - Em "Main interfaces" -> "Lua", configure uma senha em "Lua HTTP".
-   - Salve e reinicie o VLC.
-
-### Configuração do Arquivo `.env`
-
-Depois de gerar suas credenciais, crie um arquivo `.env` na raiz do projeto com o seguinte conteúdo:
-
-```plaintext
-DISCORD_TOKEN=seu_token_discord
-VLC_PASSWORD=sua_senha_vlc
-TMDB_API_KEY=sua_chave_api_tmdb
+Este projeto está licenciado sob os termos da licença MIT.
