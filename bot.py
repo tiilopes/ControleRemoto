@@ -19,9 +19,9 @@ VLC_COMMAND_URL = VLC_URL + "?command="
 
 # Prompt the user for credentials and save them in .env
 env_vars = {
-    "DISCORD_TOKEN": "Enter your Discord token: ",
-    "VLC_PASSWORD": "Enter your VLC password: ",
-    "TMDB_API_KEY": "Enter your TMDB API key: "
+    "DISCORD_TOKEN": "coloque sua chave de bot ",
+    "VLC_PASSWORD": "coloque sua senha Lua do VLC ",
+    "TMDB_API_KEY": "coloque sua TMDB API: key "
 }
 
 env_file = '.env'

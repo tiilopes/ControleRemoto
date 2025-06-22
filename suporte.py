@@ -1,8 +1,8 @@
 import discord
 
 async def support_command(interaction: discord.Interaction):
-    patreon_link = "https://www.patreon.com/seuusuario"
-    github_link = "https://github.com/seurepositorio"
+    patreon_link = "https://www.patreon.com/posts/controle-remoto-132011753?utm_medium=clipboard_copy&utm_source=copyLink&utm_campaign=postshare_creator&utm_content=join_link"
+    github_link = "https://github.com/tiilopes/ControleRemoto"
     description = (
         "🌟 **Apoie Nosso Projeto!**\n\n"
         "Estamos trabalhando arduamente para trazer uma experiência rica e envolvente com o Plexcord, "
